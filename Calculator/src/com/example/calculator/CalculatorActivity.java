@@ -1,6 +1,7 @@
 package com.example.calculator;
 
 import android.os.Bundle;
+import android.os.StrictMode;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -40,6 +41,11 @@ public class CalculatorActivity extends Activity
     @Override
     public void onCreate(Bundle savedInstanceState) 
     {
+		if (android.os.Build.VERSION.SDK_INT > 9) {
+			StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
+		    StrictMode.setThreadPolicy(policy);
+	    }
+		
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calculator);
         

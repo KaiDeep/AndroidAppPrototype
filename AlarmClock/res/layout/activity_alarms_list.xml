@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp" >
+
+      <TextView 
+          android:id="@+id/alarmMsg_txtView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="#286A9A"
+            android:paddingLeft="0dp"
+      		android:textSize="13dip" />
+      
+        <TextView
+            android:id="@+id/alarmCal_txtView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/alarmMsg_txtView"
+            android:textStyle="bold"
+            android:textSize="11dip" />
+        
+</RelativeLayout>
